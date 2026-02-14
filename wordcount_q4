@@ -1,0 +1,13 @@
+#inside Mapper
+System.out.println("MAP INPUT: " + key + " -> " + value);
+System.out.println("MAP OUTPUT: (" + word + ",1)");
+
+
+#Inside Reducer
+System.out.print("REDUCE INPUT: (" + key + " -> [");
+for (IntWritable val : values) {
+    System.out.print(val.get() + " ");
+}
+System.out.println("])");
+
+System.out.println("REDUCE OUTPUT: (" + key + "," + sum + ")");
