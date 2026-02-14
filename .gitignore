@@ -1,0 +1,17 @@
+# Compiled Java files
+*.class
+*.jar
+
+# Hadoop output folders
+output*
+input*
+input_q*
+output_q*
+
+# Hadoop logs
+logs/
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
