@@ -1,0 +1,2 @@
+String line = value.toString().toLowerCase();
+StringTokenizer itr = new StringTokenizer(line);
