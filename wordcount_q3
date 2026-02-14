@@ -1,0 +1,3 @@
+String line = value.toString().toLowerCase();
+line = line.replaceAll("[^a-zA-Z ]", "");
+StringTokenizer itr = new StringTokenizer(line);
