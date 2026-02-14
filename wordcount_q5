@@ -1,0 +1,14 @@
+String[] stopwords = {"the", "and", "is", "to", "of", "in"};
+List<String> stopList = Arrays.asList(stopwords);
+
+String line = value.toString().toLowerCase();
+line = line.replaceAll("[^a-zA-Z ]", "");
+StringTokenizer itr = new StringTokenizer(line);
+
+while (itr.hasMoreTokens()) {
+    String token = itr.nextToken();
+    if (!stopList.contains(token)) {
+        word.set(token);
+        context.write(word, one);
+    }
+}
